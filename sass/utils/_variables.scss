@@ -1,0 +1,22 @@
+
+:root {
+    /* Fonts */
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+  
+    /* Text colors */
+    --accent-color: #2196f3;
+    --main-color: #212121;
+    --second-color: #ffffff;
+    --adress-txt-main-color: rgba(255, 255, 255, 0.6);
+    --logo-color-main: #000000;
+  
+    /* Background colors */
+    --background-text-color: #757575;
+    --background-bgh-bgf-color: #2f303a;
+    --background-bgsection-color: #f5f4fa;
+  
+    /* Others */
+    --trns: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --index-backdrop: 1;
+  }

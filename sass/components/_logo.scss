@@ -1,0 +1,23 @@
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.logo,
+.logo__main-part,
+.logo__second-part {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--logo-color-main);
+}
+
+.logo__main-part {
+    color: var(--accent-color);
+  }
+
+.logo__second-part--colored.logo {
+    color: var(--second-color);
+  }
