@@ -1,63 +1,94 @@
 .quality-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $tablet;
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  
-  .quality__list {
+}
+
+.quality__list {
+  display: block;
+  padding-left: 0%;
+
+  @media screen and (min-width: $tablet) {
     display: flex;
-    padding-left: 0%;
+    flex-wrap: wrap;
+    margin: -15px;
   }
-  
-  .quality__item {
-    &:not(:last-child) {
-    margin-right: 30px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.quality__item {
+  margin-bottom: 30px;
+  // flex-basis: 100%;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30) / 2);
+    margin: 15px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
     }
-
-    &::before {
-        display: block;
-        margin-bottom: 30px;
-        content: "";
-        height: 120px;
-        border-radius: 4px;
-        background-color: var(--background-bgsection-color);
-        background-size: 70px 70px;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
   }
 
-  
-  .icon-antenna::before {
-    background-image: url(../images/icons/icon_antenna.svg);
-  }
-  
-  .icon-clock::before {
-    background-image: url(../images/icons/icon_clock.svg);
-  }
-  
-  .icon-diagram::before {
-    background-image: url(../images/icons/icon_diagram.svg);
-  }
-  
-  .icon-astronaut::before {
-    background-image: url(../images/icons/icon_astronaut.svg);
-  }
-  
-  .quality__titel {
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--main-color);
-  }
-  
-  .quality__description {
+  &::before {
     display: block;
-    width: 270px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--background-text-color);
+    margin-bottom: 30px;
+    content: "";
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--background-bgsection-color);
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icons/icon_antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/icons/icon_clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/icons/icon_diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/icons/icon_astronaut.svg);
+}
+
+.quality__titel {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.quality__description {
+  display: block;
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-text-color);
+}
