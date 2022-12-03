@@ -1,0 +1,156 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  //   margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-toggle {
+  &--opened {
+    opacity: 1;
+    transition: var(--trns);
+  }
+
+  &--closed {
+    opacity: 0;
+    transition: var(--trns);
+  }
+
+  &:hover &--opened,
+  &:focus &--opened {
+    opacity: 0;
+  }
+
+  &:hover &--closed,
+  &:focus &--closed {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 15px;
+  background-color: var(--second-color);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin-top: 48px;
+  margin-left: 40px;
+  margin-bottom: auto;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 0;
+}
+
+.mobile-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: start;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  text-decoration: none;
+  &--current {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-contacts-list {
+  margin-bottom: 64px;
+}
+.mobile-contacts-item {
+  margin-left: 40px;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-contacts {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  &--mail {
+    font-size: 24px;
+    color: var(--background-text-color);
+  }
+}
+
+.mobile-social-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  margin-bottom: 48px;
+}
+
+.mobile-social {
+  padding: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-socials-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}

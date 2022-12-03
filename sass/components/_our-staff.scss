@@ -1,77 +1,113 @@
 .staff {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-bgsection-color);
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--background-bgsection-color);
   }
-  
-  .staff__titel {
-    font-weight: 700;
+}
+
+.staff__titel {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: $desktop) {
     font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
   }
-  
-  .staff__list {
+}
+
+.staff__list {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-left: auto;
+  // gap: 30px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
     display: flex;
     margin-top: 50px;
     margin-bottom: 0px;
-    gap: 30px;
+    column-gap: 30px;
   }
-  
-  .staff__item {
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--second-color);
-    box-shadow: 0px 1px 3px 0px #0000001f, 0px 2px 1px 0px #00000033,
-      0px 1px 1px 0px #00000024;
-  }
-  
-  .staff__name--container {
-    padding: 30px 0;
-  }
-  
-  .staff__name {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-  }
-  
-  .staff__position {
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--background-text-color);
-    margin-bottom: 16px;
-  }
-  
-  .social {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    color: var(--main-color);
-    background-color: var(--second-color);
-    border-radius: 50%;
-    fill: #afb1b8;
-    transition: color var(--trns), background-color var(--trns);
+}
 
-    &:hover,
-    &:focus {
-      background-color: var(--accent-color);
-      fill: var(--second-color);
-    }
+.staff__item {
+  margin: 30px auto 0;
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--second-color);
+  box-shadow: 0px 1px 3px 0px #0000001f, 0px 2px 1px 0px #00000033,
+    0px 1px 1px 0px #00000024;
+}
+
+.staff__name--container {
+  padding: 30px 0;
+}
+
+.staff__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.staff__position {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--background-text-color);
+  margin-bottom: 16px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--main-color);
+  background-color: var(--second-color);
+  border-radius: 50%;
+  fill: #afb1b8;
+  transition: color var(--trns), background-color var(--trns);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--second-color);
   }
-  
+}

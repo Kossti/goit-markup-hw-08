@@ -1,53 +1,91 @@
 .clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--second-color);
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--second-color);
   }
-  
-  .clients__titel {
-    flex-basis: 366px;
+}
+
+.clients__titel {
+  // flex-basis: 366px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
-    font-weight: 700;
     font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
   }
-  
-  .clients__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  @media screen and (min-width: $tablet) {
+    // display: flex;
+    flex-wrap: wrap;
+    // gap: 30px;
   }
-  
-  .clients__link {
+
+  @media screen and (mon-width: $desktop) {
+    // flex-wrap: nowrap;
+  }
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 210px;
+  height: 92px;
+
+  color: #afb1b8;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: border var(--trns);
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
     width: 170px;
-    height: 92px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #afb1b8;
-    border-radius: 4px;
-    border: 1px solid #afb1b8;
-    transition: border var(--trns);
-
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-    }
   }
-  
-  .clients__icon {
-    fill: currentColor;
-    transition: color var(--trns), border-color var(--trns), fill var(--trns);
-   
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
-    }
-  }
-  
 
-  
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+  transition: color var(--trns), border-color var(--trns), fill var(--trns);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

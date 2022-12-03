@@ -1,50 +1,79 @@
+.header__border {
+  border-bottom: 1px solid #ececec;
+}
 
- .header__border {
-    border-bottom: 1px solid #ececec;
-  }
-  
-  .header__container {
-    display: flex;
-    align-items: center;
-  }
+.header__container {
+  display: flex;
+  align-items: center;
+}
 
-  .contacts {
-    display: flex;
+.contacts {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
     align-items: center;
     margin-left: auto;
   }
 
-  .contacts__list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+.contacts__list {
+  display: flex;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    margin-right: 0;
     &:not(:last-child) {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 50px;
+      margin-bottom: 10px;
     }
   }
 
-  .contacts__link {
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: 50px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.contacts__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--background-text-color);
+  transition: color var(--trns);
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
     padding: 32px 0;
-    font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--background-text-color);
-    transition: color var(--trns);
   }
+}
 
-  .icons {
-    margin-right: 10px;
-    fill: currentColor;
-    transition: color var(--trns);
-    transition: border-color var(--trns);
+.icons {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: color var(--trns);
+  transition: border-color var(--trns);
 
-    &:hover,
-    &:focus {
+  &:hover,
+  &:focus {
     color: var(--accent-color);
-    }
   }
-
-  
+}
