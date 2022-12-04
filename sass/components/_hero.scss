@@ -27,7 +27,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/heroes/x/img_sm@1x.jpg);
+    url(../images/heroes/x/bg_sm@1x.jpg);
 
   //mobile screen retina
   @media screen and (min-device-pixel-ratio: 2),
@@ -38,7 +38,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/heroes/x/img_sm@2x.jpg);
+      url(../images/heroes/x/bg_sm@2x.jpg);
   }
 
   //tablet  screen
@@ -59,7 +59,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/heroes/x/img_md@2x.jpg);
+        url(../images/heroes/x/bg_md@2x.jpg);
     }
   }
 
@@ -70,7 +70,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/heroes/x/img_lg@1x.jpg);
+      url(../images/heroes/x/bg_lg@1x.jpg);
 
     //desktop screen retina
     @media (min-device-pixel-ratio: 2),
@@ -81,7 +81,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/heroes/x/img_lg@2x.jpg);
+        url(../images/heroes/x/bg_lg@2x.jpg);
     }
   }
 }
