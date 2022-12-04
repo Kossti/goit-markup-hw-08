@@ -8,6 +8,19 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    margin: auto;
+    padding: 118px 0px;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    margin: auto;
+    padding: 200px 0px;
+  }
+
   //mobile screen
   background-image: linear-gradient(
       to right,
@@ -70,19 +83,6 @@
         ),
         url(../images/heroes/x/img_lg@2x.jpg);
     }
-  }
-
-  @media screen and (min-width: $tablet) {
-    max-width: 768px;
-    margin: auto;
-    padding: 118px 0px;
-    background-size: cover;
-  }
-
-  @media screen and (min-width: $desktop) {
-    max-width: 1600px;
-    margin: auto;
-    padding: 200px 0px;
   }
 }
 
