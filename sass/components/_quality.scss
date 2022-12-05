@@ -34,7 +34,9 @@
 }
 
 .quality__item {
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: $tablet) {
     // width: calc((100% - 2 * 30px) / 2);

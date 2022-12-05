@@ -20,7 +20,7 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, 93px);
-  width: 450px;
+  min-width: 450px;
   min-height: 609px;
   padding: 40px;
   background-color: var(--second-color);
@@ -32,7 +32,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    min-width: 450px;
     min-height: 609px;
   }
 
@@ -41,7 +41,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 528px;
+    min-width: 528px;
     min-height: 581px;
   }
 }
